@@ -4,13 +4,24 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## Day job ##
+I am a Prototype Software Engineer at Monsanto. This position entitles me to rapidly design full system prototyes, while implementing best of breed technologies and processes. I get to work with:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+* Angular
+* NodeJS
+* Java
+* Scala
 
-What else do you need?
+## In my free time ##
+I am focused on mastering Haskell right now, but I do quite a bit of other work in my free time.
 
-### my history
+* Haskell
+* Go
+* ReactJS
+* Python
+* Ruby
+* Raspberry Pi
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<!-- I am also involved with the process of transitioning these prototypes to full fledge systems under an on going team. This involves training, introduction to tools, style guide construction, and best practice communication. -->
+<!--
+In my free time I have been working hard to learn Haskell and it has become a small passion of mine. I really enjoy the type system design and the language philosophy of composition as a whole. My advancements with Haskell have heavily influenced my style of development across the board. -->
