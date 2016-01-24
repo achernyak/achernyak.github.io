@@ -6,7 +6,7 @@ published: true
 ---
 
 
-I have been interested in software development almost my entire life. The ability to make the computer do complex tasks for you seemed like magic to me, and sometimes still does. I deployed my first web page at the age of 14 and I have been in love with development ever since.
+I have been interested in software development almost my entire life. The ability to make the computer do complex tasks for you seemed like magic to me, and sometimes still does. I deployed my first web page at 14 and I have been in love with development ever since.
 
 With school and work, the wonder of development started to fade. Every task seemed like just busy work and there wasn't much exitement. Luckily, I soon discovered functional programming through a good friend of mine.
 
