@@ -1,10 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: My story
+published: true
 ---
 
-I am a huge proponent for functional programming and I have been able to use it across a breadth of technologies. I want to share my experiences, good or bad, with anyone that is interested in software development.
+
+I have been interested in software development almost my entire life. The ability to make the computer do complex tasks for you seemed like magic to me, and sometimes still does. I deployed my first web page at the age of 14 and I have been in love with development ever since.
+
+With school and work, the wonder of development started to fade. Every task seemed like just busy work and there wasn't much exitement. Luckily, I soon discovered functional programming through a good friend of mine.
+
+Functional programming brought the magic back to my programs. It brought a whole new level of abstraction with it, making mundane things much quicker to accomplish and let me focus on the real interesting problems.
+
+I have carried the concepts of functional programming with me throught a wide breadth of techologies, and this blog is for me to share my experiences.
 
 ## Day job ##
 I am a Prototype Software Engineer at Monsanto. This position entitles me to rapidly design full system prototypes, while implementing best of breed technologies and processes. I get to work with:
@@ -20,10 +28,7 @@ Right now, I am focused on mastering Haskell and it's become a small passion of 
 
 * Haskell
 * Go
+* C
 * ReactJS
 * Ruby
 * Raspberry Pi
-
-<!-- I am also involved with the process of transitioning these prototypes to full fledge systems under an on going team. This involves training, introduction to tools, style guide construction, and best practice communication. -->
-<!--
-In my free time I have been working hard to learn Haskell and it has become a small passion of mine. I really enjoy the type system design and the language philosophy of composition as a whole. My advancements with Haskell have heavily influenced my style of development across the board. -->
