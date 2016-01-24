@@ -1,7 +1,6 @@
 ---
 layout: post
 subtitle: Using Stack and Atom
-date: ""
 published: false
 title: Universal Haskell dev enviornment
 ---
