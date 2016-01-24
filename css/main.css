@@ -96,7 +96,7 @@ img {
 
 .navbar-custom {
   background: #EDF1E4;
-  border-bottom: 1px solid #AEC77F;
+  border-bottom: 1px solid #65793E;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -188,7 +188,7 @@ img {
 footer {
   padding: 30px 0;
   background: #EDF1E4;
-  border-top: 1px solid #AEC77F;
+  border-top: 1px solid #65793E;
   margin-top: 50px;
   font-size: 14px;
 }
