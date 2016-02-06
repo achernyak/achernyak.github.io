@@ -21,9 +21,18 @@ That's it those are the two major tools you will need to install and everything 
 ## The setup
 Now let's crack open the terminal and configure our environment. All the commands will remain the same regardless of your operating system. 
 
-The easiest part to install is the atom packages. It's just one line.
-    $ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
-Next we need to install Haskell, or GHC to be more specific. Stack does not come GHC but it does come with an easy way to install it.
-    $ stack setup
-Now, for all the atom packages to work. We will need a few Haskell packages installed. These are all very simple to install except `ghc-mod` has a quirk with it's dependencies.
+Let's start by installing Haskell, or GHC to be more specific. Stack does not come GHC but it does come with an easy way to install it.
+```
+$ stack setup
+```
+Now you have a working version of GHC and you can drop into the repl at any time. Feel free to try this out with `stack repl`. 
+
+Next let's install all our atom packages. Which is just one line! These packages include everything you would expect. Syntax highlights, code completion, linting, and even some auto formatting.
+```
+$ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
+```
+To get all these atom packages to work, we will need a few Haskell packages installed. These are all very simple to install except `ghc-mod` has a quirk with it's dependencies.
+
+*You must be outside of any stack project for all of these!* You must do this so the binaries get installed using your global configuration and not project specific setup. This will make updating things in the future a little easier for you.
+
 
