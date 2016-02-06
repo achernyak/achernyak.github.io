@@ -25,3 +25,5 @@ The easiest part to install is the atom packages. It's just one line.
     $ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
 Next we need to install Haskell, or GHC to be more specific. Stack does not come GHC but it does come with an easy way to install it.
     $ stack setup
+Now, for all the atom packages to work. We will need a few Haskell packages installed. These are all very simple to install except `ghc-mod` has a quirk with it's dependencies.
+
