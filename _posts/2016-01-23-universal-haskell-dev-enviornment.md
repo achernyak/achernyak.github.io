@@ -48,4 +48,5 @@ At this point you need to check the output from stack to ensure that the binary 
 
 That's it. This is all you need to have a working Haskell setup on any machine. If you want to try it out, go ahead and run `stack new MyProject`. This will create a fresh stack project and give you a few small sample file. If you try to define your own functions you should see code help and debug information just like you would expect.
 
+
 Happy hacking on your new setup!
