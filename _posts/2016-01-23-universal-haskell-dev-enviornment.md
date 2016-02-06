@@ -42,7 +42,8 @@ Next let's install all our atom packages. Which is just one line! These packages
 $ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
 ```
 
-*You must be outside of any stack project to run this command!* This installs the binaries using your global configuration and not project specific setup. Which will make updating things in the future a little easier.
+#You must be outside of any stack project to run this command!#
+This installs the binaries using your global configuration and not project specific setup. Which will make updating things in the future a little easier.
 
 ```
 $ stack install ghc-mod stylish-haskell
