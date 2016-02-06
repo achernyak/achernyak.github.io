@@ -1,7 +1,7 @@
 ---
 layout: post
 subtitle: Using Stack and Atom
-published: false
+published: true
 title: Universal Haskell development environment
 ---
 
@@ -22,17 +22,28 @@ That's it those are the two major tools you will need to install and everything 
 Now let's crack open the terminal and configure our environment. All the commands will remain the same regardless of your operating system. 
 
 Let's start by installing Haskell, or GHC to be more specific. Stack does not come GHC but it does come with an easy way to install it.
+
 ```
 $ stack setup
 ```
 Now you have a working version of GHC and you can drop into the repl at any time. Feel free to try this out with `stack repl`. 
 
 Next let's install all our atom packages. Which is just one line! These packages include everything you would expect. Syntax highlights, code completion, linting, and even some auto formatting.
+
 ```
 $ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
 ```
-To get all these atom packages to work, we will need a few Haskell packages installed. These are all very simple to install except `ghc-mod` has a quirk with it's dependencies.
 
-*You must be outside of any stack project for all of these!* You must do this so the binaries get installed using your global configuration and not project specific setup. This will make updating things in the future a little easier for you.
+*You must be outside of any stack project to run this command!* This installs the binaries using your global configuration and not project specific setup. Which will make updating things in the future a little easier.
 
+```
+$ stack install ghc-mod stylish-haskell
+```
 
+`ghc-mod` will do all heavy lifting for your setup. It's the backend for all the auto completion, linting, code validation, etc. While `stylish-haskell` will prettify your code. 
+
+At this point you need to check the output from stack to ensure that the binary install location has been added to your path. If it hasn't you will see a message instructing you on the exact folder that needs to be added.
+
+That's it. This is all you need to have a working Haskell setup on any machine. If you want to try it out, go ahead and run `stack new MyProject`. This will create a fresh stack project and give you a few small sample file. If you try to define your own functions you should see code help and debug information just like you would expect.
+
+Happy hacking on your new setup!
