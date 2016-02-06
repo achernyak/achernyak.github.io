@@ -24,7 +24,7 @@ We will be using these tools to solve the above problems and make the installati
 1. [Stack](http://docs.haskellstack.org/) is probably the single biggest win for Haskell in the last year. It makes everything from freshly installing Haskell to creating and building new projects a no brainer.
 2. [Atom](https://atom.io/) has become one of my favorite text editors and has great support for Haskell.
 
-That's it those are the two major tools you will need to install and everything else is done through packages for them. Go ahead and install these from their respective websites.
+Those are the two major tools you will need to install and everything else is done through packages for them. Go ahead and install these from their respective websites.
 
 ## The setup
 Now let's crack open the terminal and configure our environment. All the commands will remain the same regardless of your operating system. 
