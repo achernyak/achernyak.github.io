@@ -82,7 +82,6 @@ defaults:
       type: "posts"
     values:
       comments: true  # add comments to all blog posts
-      layout: "default"
   -
     scope:
       path: "" # all files
