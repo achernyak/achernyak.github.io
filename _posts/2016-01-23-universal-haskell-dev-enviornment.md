@@ -2,7 +2,7 @@
 layout: post
 subtitle: Using Stack and Atom
 published: true
-title: Universal Haskell development environment
+title: Easy universal Haskell development environment
 date: "2016-02-06"
 ---
 
