@@ -8,6 +8,7 @@ date: "2016-02-06"
 
 
 
+
 ## Motivation
 Haskell is notoriously difficult to setup, which probably led to many people being scared away from ever getting started. However, there has been a lot of work done to address these short comings. And there is a way to setup a very pleasant environment thanks to the hard work of many projects.
 
@@ -19,8 +20,10 @@ Traditional methods included:
 
 ## Tools of the trade
 We will be using these tools to solve the above problems and make the installation completely system agnostic. That's right, this installation process with work on any platform OS X, Linux, and even Windows.
+
 1. [Stack](http://docs.haskellstack.org/) is probably the single biggest win for Haskell in the last year. It makes everything from freshly installing Haskell to creating and building new projects a no brainer.
 2. [Atom](https://atom.io/) has become one of my favorite text editors and has great support for Haskell.
+
 That's it those are the two major tools you will need to install and everything else is done through packages for them. Go ahead and install these from their respective websites.
 
 ## The setup
