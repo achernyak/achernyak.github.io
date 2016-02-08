@@ -411,3 +411,16 @@ header.header-post .post-heading .post-subheading {
 .blog-post table tr td :last-child {
   margin-bottom: 0;
 }
+
+.pager li>a, .pager li>span {
+  border: 1px solid #65793E;
+}
+
+pre {
+  border: 1px solid #65793E;
+}
+
+code {
+  color: #65793E;
+  background-color: #EDF1E4;
+}
