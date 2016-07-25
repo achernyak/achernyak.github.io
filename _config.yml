@@ -25,6 +25,8 @@ description: Exploring technology
 navbar-links:
   About Me: "aboutme"
 
+avatar: "/img/avatar-icon.png"
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
