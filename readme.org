@@ -1,0 +1,2 @@
+* My personal blog
+  The blog is powered by [[https://github.com/daattali/beautiful-jekyll][beautiful-jekyll]], an amazing template in general. I made some modification to make it suite my personal taste.
