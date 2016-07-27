@@ -26,7 +26,7 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Phoenix</h1><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-07-27 Wed 10:11</p>
+<section id="sec-title-slide"><h1 class="title">Phoenix</h1><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-07-27 Wed 11:10</p>
 </section>
 
 <section>
@@ -158,22 +158,22 @@
 <section id="slide-orgheadline6">
 <h3 id="orgheadline6">Erlang</h3>
 <ul>
-<li>created in mid-1980s</li>
-<li>designed for telecom</li>
-<li>connecting multiple systems</li>
-<li>minimal impact of errors</li>
-<li>entire system should never go down</li>
+<li>Created in mid-1980s</li>
+<li>Designed for telecom</li>
+<li>Connecting multiple systems</li>
+<li>Minimal impact of errors</li>
+<li>Entire system should never go down</li>
 
 </ul>
 </section>
 <section id="slide-orgheadline7">
 <h3 id="orgheadline7">High Availability</h3>
 <ul>
-<li>fault tolerance</li>
-<li>scalability</li>
-<li>distribution</li>
-<li>responsiveness</li>
-<li>live update</li>
+<li>Fault tolerance</li>
+<li>Scalability</li>
+<li>Distribution</li>
+<li>Responsiveness</li>
+<li>Live update</li>
 
 </ul>
 </section>
@@ -310,17 +310,17 @@
 <section id="slide-orgheadline13">
 <h3 id="orgheadline13">What is Plug?</h3>
 <ul>
-<li>specification for composable web modules</li>
-<li>sets up small reusable and composable modules
+<li>Specification for composable web modules</li>
+<li>Sets up small reusable and composable modules
 <ul>
-<li>request header parsing, logging, authentication, etc.</li>
+<li>Request header parsing, logging, authentication, etc.</li>
 
 </ul></li>
-<li>frequently used in a pipeline format</li>
-<li>comes in two flavors
+<li>Frequently used in a pipeline format</li>
+<li>Comes in two flavors
 <ul>
-<li>function plugs</li>
-<li>module plugs</li>
+<li>Function plugs</li>
+<li>Module plugs</li>
 
 </ul></li>
 
@@ -428,10 +428,10 @@
 <section id="slide-orgheadline19">
 <h3 id="orgheadline19">Module Plug</h3>
 <ul>
-<li>requires init/1 to be defined</li>
-<li>requires call/2 to be defined
+<li>Requires init/1 to be defined</li>
+<li>Requires call/2 to be defined
 <ul>
-<li>the same as the function plug earlier</li>
+<li>The same as the function plug earlier</li>
 
 </ul></li>
 
@@ -496,7 +496,7 @@
 <h3 id="orgheadline24">Ecto.Repo</h3>
 <ul>
 <li>Manages DB connections</li>
-<li>Every connection gets it's own supervisor</li>
+<li>Every connection gets its own supervisor</li>
 <li>Multiple sessions are created under the supervisor</li>
 <li>Can be configured to have multiple supervisors</li>
 
@@ -525,10 +525,10 @@ config <span style="color: #e5786d;">:my_app</span>, <span style="color: #92a65e
 <section id="slide-orgheadline26">
 <h3 id="orgheadline26">Schema</h3>
 <ul>
-<li>define shape of the data</li>
-<li>allows interactions</li>
-<li>uses structs(unique key value store) to represent data</li>
-<li>don't need a schema to use operations that act on the entire data set</li>
+<li>Define shape of the data</li>
+<li>Allows interactions</li>
+<li>Uses structs(unique key value store) to represent data</li>
+<li>Don't need a schema to use operations that act on the entire data set</li>
 
 </ul>
 </section>
