@@ -26,7 +26,7 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Phoenix</h1><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-07-25 Mon 12:47</p>
+<section id="sec-title-slide"><h1 class="title">Phoenix</h1><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-07-27 Wed 10:11</p>
 </section>
 
 <section>
@@ -132,7 +132,7 @@
 </table>
 </section>
 <section id="slide-orgheadline4">
-<h3 id="orgheadline4">Sclability</h3>
+<h3 id="orgheadline4">Scalability</h3>
 <ul>
 <li>Server used:
 <ul>
@@ -142,7 +142,7 @@
 <li>1,250Mb/s</li>
 
 </ul></li>
-<li>Started with 30,000 connections on a single macine</li>
+<li>Started with 30,000 connections on a single machine</li>
 <li>Phoenix was optimized over a couple weeks (due to lack of test servers)</li>
 <li>2,000,000 web socket connections on a single machine, to a chat server</li>
 <li>Improvements are now live!</li>
@@ -160,7 +160,7 @@
 <ul>
 <li>created in mid-1980s</li>
 <li>designed for telecom</li>
-<li>connecting multipel systems</li>
+<li>connecting multiple systems</li>
 <li>minimal impact of errors</li>
 <li>entire system should never go down</li>
 
@@ -311,15 +311,15 @@
 <h3 id="orgheadline13">What is Plug?</h3>
 <ul>
 <li>specification for composable web modules</li>
-<li>sets up small reusabe and composable modules
+<li>sets up small reusable and composable modules
 <ul>
-<li>request heder parsing, logging, authentication, etc.</li>
+<li>request header parsing, logging, authentication, etc.</li>
 
 </ul></li>
 <li>frequently used in a pipeline format</li>
 <li>comes in two flavors
 <ul>
-<li>funciton plugs</li>
+<li>function plugs</li>
 <li>module plugs</li>
 
 </ul></li>
@@ -335,7 +335,7 @@
 </ul>
 </section>
 <section id="slide-orgheadline15">
-<h3 id="orgheadline15">Function plugs exmple</h3>
+<h3 id="orgheadline15">Function plugs example</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ruby"><span style="color: #8ac6f2; font-weight: bold;">def</span> <span style="color: #cae682;">put_headers</span>(conn, key_values) <span style="color: #8ac6f2; font-weight: bold;">do</span>
@@ -497,7 +497,7 @@
 <ul>
 <li>Manages DB connections</li>
 <li>Every connection gets it's own supervisor</li>
-<li>Multiple sessions are created upder the supervisor</li>
+<li>Multiple sessions are created under the supervisor</li>
 <li>Can be configured to have multiple supervisors</li>
 
 </ul>
@@ -734,6 +734,11 @@ posts = <span style="color: #92a65e; font-weight: bold;">Repo</span>.all(<span s
 <span style="color: #8ac6f2; font-weight: bold;">end</span>
 </pre>
 </div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline39">
+<h2 id="orgheadline39">Additional features</h2>
 </section>
 </section>
 </div>
