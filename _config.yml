@@ -33,18 +33,18 @@ avatar: "/img/cropped-profile.jpg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Artem Chernyak
-  email: "artemchernyak@gmail.com"
-  facebook: Artem-Chernyak  # eg. daattali
   github: achernyak    # eg. daattali
   linkedin: /in/artem-chernyak-28159434  # eg. "pub/dean-attali/8/946/143"
+  email: "artemchernyak@gmail.com"
   twitter: __acher__
+  facebook: Artem-Chernyak  # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
   rss: true
   facebook: true
   email: true
-  twitter: false
+  twitter: true
   github: true
   linkedin: true
   stackoverflow: false
