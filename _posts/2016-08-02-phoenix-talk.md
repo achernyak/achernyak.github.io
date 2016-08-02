@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Phoenix talk
 ---
 # Phoenix talk
@@ -19,3 +19,5 @@ In this talk, I cover some of the best features of [Phoenix](http://www.phoenixf
 There is also a short demo of the app showing how a typical Phoenix
 app looks. I also use [Visualixir](https://github.com/koudelka/visualixir) to demonstrate the process layout
 of the app and how comunication is handled.
+
+{% youtube h4z7WnMLXKI %}
