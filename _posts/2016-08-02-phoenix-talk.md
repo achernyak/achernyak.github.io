@@ -5,10 +5,10 @@ title: Phoenix talk
 ---
 # Phoenix talk
 
-I recently gave a talk on the [Phoenix Framework](http://www.phoenixframework.org/), which is the de
+I recently gave a talk, at the local [Fullstack Meetup](http://www.fullstack.org/), on the [Phoenix Framework](http://www.phoenixframework.org/). Phoenix is the de
 facto web framework for [Elixir](http://elixir-lang.org/).
 
-In this talk, I cover some of the nicest features of [Phoenix](http://www.phoenixframework.org/):
+In this talk, I cover some of the best features of [Phoenix](http://www.phoenixframework.org/):
 
 -   [Erlang](http://www.erlang.org/): The platmor which Elixir and Phoenix are build on. (albeit
     very brief overview of the major features)
