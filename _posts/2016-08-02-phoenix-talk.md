@@ -16,9 +16,8 @@ In this talk, I cover some of the best features of [Phoenix](http://www.phoenixf
     Phoenix much of it's power.
 -   [Ecto](https://hexdocs.pm/ecto/Ecto.html): The database integration layer.
 
-There is also a short demo of the app showing how a typical Phoenix
-app looks. I also use [Visualixir](https://github.com/koudelka/visualixir) to demonstrate the process layout
-of the app and how comunication is handled.
+Close to the end, there is a short demo of an app showing how a typical Phoenix
+app looks. In this scriont, I also use [Visualixir](https://github.com/koudelka/visualixir) to demonstrate the process layout of the app and how comunication is handled between processes.
 
 <div class="video">
     <figure>
