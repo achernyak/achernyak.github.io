@@ -20,4 +20,8 @@ There is also a short demo of the app showing how a typical Phoenix
 app looks. I also use [Visualixir](https://github.com/koudelka/visualixir) to demonstrate the process layout
 of the app and how comunication is handled.
 
-{% youtube h4z7WnMLXKI %}
+<div class="video">
+    <figure>
+        <iframe width="640" height="480" src="//www.youtube.com/embed/h4z7WnMLXKI" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
