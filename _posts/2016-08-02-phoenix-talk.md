@@ -3,8 +3,6 @@ layout: post
 published: true
 title: Phoenix talk
 ---
-# Phoenix talk
-
 I recently gave a talk, at the local [Fullstack Meetup](http://www.fullstack.org/), on the [Phoenix Framework](http://www.phoenixframework.org/). Phoenix is the de
 facto web framework for [Elixir](http://elixir-lang.org/).
 
