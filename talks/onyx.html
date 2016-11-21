@@ -26,18 +26,18 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-11-21 Mon 08:10</p>
+<section id="sec-title-slide"><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-11-21 Mon 08:30</p>
 </section>
 
 <section>
-<section id="slide-org7501a8a">
-<h2 id="org7501a8a">What does Onyx offer?</h2>
+<section id="slide-org8d93abf">
+<h2 id="org8d93abf">What does Onyx offer?</h2>
 <p>
 The distributed compute framework
 </p>
 </section>
-<section id="slide-org2313b8f">
-<h3 id="org2313b8f">Information model</h3>
+<section id="slide-orgd951bd9">
+<h3 id="orgd951bd9">Information model</h3>
 <ul>
 <li>flexible data structure</li>
 <li>constructible from various sources</li>
@@ -46,8 +46,8 @@ The distributed compute framework
 
 </ul>
 </section>
-<section id="slide-org14ac86a">
-<h3 id="org14ac86a">Temporal decoupling</h3>
+<section id="slide-org9acc210">
+<h3 id="org9acc210">Temporal decoupling</h3>
 <ul>
 <li>data is the highest importance</li>
 <li>constructs can be hot swapped</li>
@@ -55,8 +55,8 @@ The distributed compute framework
 
 </ul>
 </section>
-<section id="slide-org11d9317">
-<h3 id="org11d9317">Focus on plain clojure</h3>
+<section id="slide-orgda87f92">
+<h3 id="orgda87f92">Focus on plain clojure</h3>
 <ul>
 <li>no dsl style macros</li>
 <li>vanilla clojure functions</li>
@@ -64,8 +64,8 @@ The distributed compute framework
 
 </ul>
 </section>
-<section id="slide-orgc5d811b">
-<h3 id="orgc5d811b">Easy testing</h3>
+<section id="slide-org654ccd2">
+<h3 id="org654ccd2">Easy testing</h3>
 <ul>
 <li>simple environment configuration</li>
 <li>input and output is easily swapped</li>
@@ -73,24 +73,26 @@ The distributed compute framework
 
 </ul>
 </section>
-<section id="slide-org721dbbb">
-<h3 id="org721dbbb">Scalability</h3>
+<section id="slide-orgb7ca480">
+<h3 id="orgb7ca480">Scalability</h3>
 <ul>
 <li>parameterization</li>
 <li>easy code reuse</li>
 <li>batching and streaming</li>
 <li>conditional and branching execution</li>
+<li>peer addition and removal</li>
+<li>dead peer detection</li>
 
 </ul>
 </section>
 </section>
 <section>
-<section id="slide-orgd1768af">
-<h2 id="orgd1768af">Basic concepts</h2>
-<div class="outline-text-2" id="text-orgd1768af">
+<section id="slide-org3d25e5e">
+<h2 id="org3d25e5e">Basic concepts</h2>
+<div class="outline-text-2" id="text-org3d25e5e">
 </div></section>
-<section id="slide-org55ab649">
-<h3 id="org55ab649">Flow conditions</h3>
+<section id="slide-org414b0fe">
+<h3 id="org414b0fe">Flow conditions</h3>
 <p>
 Determines which task data will pass through.
 </p>
@@ -109,8 +111,8 @@ Determines which task data will pass through.
 </pre>
 </div>
 </section>
-<section id="slide-org1411bcf">
-<h3 id="org1411bcf">Life-cycles</h3>
+<section id="slide-orgb231865">
+<h3 id="orgb231865">Life-cycles</h3>
 <p>
 Allows for code execution around a task
 </p>
@@ -122,8 +124,8 @@ Allows for code execution around a task
 
 </ul>
 </section>
-<section id="slide-org910c93f">
-<h3 id="org910c93f">Windows and triggers</h3>
+<section id="slide-orgcbf7cc6">
+<h3 id="orgcbf7cc6">Windows and triggers</h3>
 <ul>
 <li>Windows capture and aggregated data into buckets</li>
 <li>Triggers release data captured by windows</li>
