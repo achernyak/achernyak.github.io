@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Artem Chernyak)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="author">Artem Chernyak</h2><p class="date">Created: 2016-11-21 Mon 08:10</p>
+</section>
+
+<section>
+<section id="slide-org7501a8a">
+<h2 id="org7501a8a">What does Onyx offer?</h2>
+<p>
+The distributed compute framework
+</p>
+</section>
+<section id="slide-org2313b8f">
+<h3 id="org2313b8f">Information model</h3>
+<ul>
+<li>flexible data structure</li>
+<li>constructible from various sources</li>
+<li>easier to use than an API</li>
+<li>easier to extend than a DSL</li>
+
+</ul>
+</section>
+<section id="slide-org14ac86a">
+<h3 id="org14ac86a">Temporal decoupling</h3>
+<ul>
+<li>data is the highest importance</li>
+<li>constructs can be hot swapped</li>
+<li>construct configurations can be saved</li>
+
+</ul>
+</section>
+<section id="slide-org11d9317">
+<h3 id="org11d9317">Focus on plain clojure</h3>
+<ul>
+<li>no dsl style macros</li>
+<li>vanilla clojure functions</li>
+<li>decoupling of function and context</li>
+
+</ul>
+</section>
+<section id="slide-orgc5d811b">
+<h3 id="orgc5d811b">Easy testing</h3>
+<ul>
+<li>simple environment configuration</li>
+<li>input and output is easily swapped</li>
+<li>no interface mocking</li>
+
+</ul>
+</section>
+<section id="slide-org721dbbb">
+<h3 id="org721dbbb">Scalability</h3>
+<ul>
+<li>parameterization</li>
+<li>easy code reuse</li>
+<li>batching and streaming</li>
+<li>conditional and branching execution</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd1768af">
+<h2 id="orgd1768af">Basic concepts</h2>
+<div class="outline-text-2" id="text-orgd1768af">
+</div></section>
+<section id="slide-org55ab649">
+<h3 id="org55ab649">Flow conditions</h3>
+<p>
+Determines which task data will pass through.
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-clojure"><span style="color: #99968b;">;;;            </span><span style="color: #99968b;">input</span>
+<span style="color: #99968b;">;;;             </span><span style="color: #99968b;">/\</span>
+<span style="color: #99968b;">;;; </span><span style="color: #99968b;">processing-1 processing-2</span>
+<span style="color: #99968b;">;;;     </span><span style="color: #99968b;">|             |</span>
+<span style="color: #99968b;">;;;  </span><span style="color: #99968b;">output-1      output-2</span>
+
+<span style="color: #8c8c8c;">[</span><span style="color: #93a8c6;">[</span><span style="color: #e5786d;">:input</span> <span style="color: #e5786d;">:processing-1</span><span style="color: #93a8c6;">]</span>
+ <span style="color: #93a8c6;">[</span><span style="color: #e5786d;">:input</span> <span style="color: #e5786d;">:processing-2</span><span style="color: #93a8c6;">]</span>
+ <span style="color: #93a8c6;">[</span><span style="color: #e5786d;">:processing-1</span> <span style="color: #e5786d;">:output-1</span><span style="color: #93a8c6;">]</span>
+ <span style="color: #93a8c6;">[</span><span style="color: #e5786d;">:processing-2</span> <span style="color: #e5786d;">:output-2</span><span style="color: #93a8c6;">]</span><span style="color: #8c8c8c;">]</span>
+</pre>
+</div>
+</section>
+<section id="slide-org1411bcf">
+<h3 id="org1411bcf">Life-cycles</h3>
+<p>
+Allows for code execution around a task
+</p>
+<ul>
+<li>before-task-start</li>
+<li>after-task-stop</li>
+<li>handle-exception</li>
+<li>etc.</li>
+
+</ul>
+</section>
+<section id="slide-org910c93f">
+<h3 id="org910c93f">Windows and triggers</h3>
+<ul>
+<li>Windows capture and aggregated data into buckets</li>
+<li>Triggers release data captured by windows</li>
+<li>Data is released by a performing an action on it</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+minScale: 0.20,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
