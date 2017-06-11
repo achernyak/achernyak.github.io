@@ -1,10 +1,8 @@
 ---
 layout: post
 published: true
-title: rails-csv-importsfd
+title: Efficient CSV imports in Rails
 ---
-# Efficient CSV imports in Rails
-
 Rails has great capabilities for working CSV files. However, like with many
 things, the most obvious way is not the most efficient.
 
@@ -13,7 +11,7 @@ After digging through metrics, made easy thanks to
 [Prometheus](https://prometheus.io) and [Grafana](https://grafana.com). We noticed that the spikes were due to our CSV
 uploads. 
 
-## Examining CSV import
+# Examining CSV import
 
 Our processor is responsible for bringing in coordinates
 from legacy systems and ones that cannot support our API.
@@ -38,7 +36,7 @@ Looking at this code, I quickly came to the assumption that
 `read` was storing the entire file in memory before parsing.
 Which sent me on a search for a more efficient parsing method.
 
-## Better parsing method
+# Better parsing method
 
 Through my search, I came across an amazingly detailed [article](https://dalibornasevic.com/posts/68-processing-large-csv-files-with-ruby) on how to get the
 most memory efficient reads possible. It turns out, we were using the least
@@ -73,7 +71,7 @@ more than happy to let `CSV.foreach` handle the reading for me.
 This one change eliminated our memory spikes. Making CSV imports a
 minor event for the server.
 
-## Reducing the number of creates
+# Reducing the number of creates
 
 However, while looking a the metrics around CSV imports I also noticed that it
 took a long time to import a CSV. The most glaring suspect was the `create` on
