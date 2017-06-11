@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: rails-csv-importsfd
 ---
 # Efficient CSV imports in Rails
